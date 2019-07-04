@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var namaBari:String?
     var namaKedua:String?
+    var namaKeEmpat:String?
     
     lazy var contactModel: ContactModel = ContactModel()
     var dataContact = [Contact]()
