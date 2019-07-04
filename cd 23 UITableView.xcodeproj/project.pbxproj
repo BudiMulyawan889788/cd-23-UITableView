@@ -15,6 +15,9 @@
 		257278F522CDDEBA00AC6456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257278F322CDDEBA00AC6456 /* LaunchScreen.storyboard */; };
 		2572790022CDDEBB00AC6456 /* cd_23_UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257278FF22CDDEBB00AC6456 /* cd_23_UITableViewTests.swift */; };
 		2572790B22CDDEBB00AC6456 /* cd_23_UITableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2572790A22CDDEBB00AC6456 /* cd_23_UITableViewUITests.swift */; };
+		2572791922CDE62700AC6456 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2572791822CDE62700AC6456 /* TableViewCell.swift */; };
+		2572795B22CDFF8500AC6456 /* contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2572795A22CDFF8500AC6456 /* contact.swift */; };
+		2572795D22CE00A200AC6456 /* contactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2572795C22CE00A200AC6456 /* contactModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		2572790622CDDEBB00AC6456 /* cd 23 UITableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cd 23 UITableViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2572790A22CDDEBB00AC6456 /* cd_23_UITableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cd_23_UITableViewUITests.swift; sourceTree = "<group>"; };
 		2572790C22CDDEBB00AC6456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2572791822CDE62700AC6456 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2572795A22CDFF8500AC6456 /* contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contact.swift; sourceTree = "<group>"; };
+		2572795C22CE00A200AC6456 /* contactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +105,11 @@
 		257278E622CDDEB900AC6456 /* cd 23 UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				2572795922CDFEF900AC6456 /* Controller */,
+				2572795822CDFEEB00AC6456 /* view */,
+				2572795722CDFEB300AC6456 /* Model */,
 				257278E722CDDEB900AC6456 /* AppDelegate.swift */,
-				257278E922CDDEB900AC6456 /* ViewController.swift */,
-				257278EB22CDDEB900AC6456 /* Main.storyboard */,
 				257278F122CDDEBA00AC6456 /* Assets.xcassets */,
-				257278F322CDDEBA00AC6456 /* LaunchScreen.storyboard */,
 				257278F622CDDEBA00AC6456 /* Info.plist */,
 				257278EE22CDDEB900AC6456 /* cd_23_UITableView.xcdatamodeld */,
 			);
@@ -126,6 +132,33 @@
 				2572790C22CDDEBB00AC6456 /* Info.plist */,
 			);
 			path = "cd 23 UITableViewUITests";
+			sourceTree = "<group>";
+		};
+		2572795722CDFEB300AC6456 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2572795A22CDFF8500AC6456 /* contact.swift */,
+				2572795C22CE00A200AC6456 /* contactModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2572795822CDFEEB00AC6456 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				257278EB22CDDEB900AC6456 /* Main.storyboard */,
+				2572791822CDE62700AC6456 /* TableViewCell.swift */,
+				257278F322CDDEBA00AC6456 /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		2572795922CDFEF900AC6456 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				257278E922CDDEB900AC6456 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				257278F022CDDEB900AC6456 /* cd_23_UITableView.xcdatamodeld in Sources */,
+				2572791922CDE62700AC6456 /* TableViewCell.swift in Sources */,
+				2572795D22CE00A200AC6456 /* contactModel.swift in Sources */,
 				257278EA22CDDEB900AC6456 /* ViewController.swift in Sources */,
+				2572795B22CDFF8500AC6456 /* contact.swift in Sources */,
 				257278E822CDDEB900AC6456 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34B876TXLU;
 				INFOPLIST_FILE = "cd 23 UITableView/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34B876TXLU;
 				INFOPLIST_FILE = "cd 23 UITableView/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
