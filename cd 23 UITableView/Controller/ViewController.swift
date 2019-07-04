@@ -12,8 +12,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var tableView: UITableView!
     
-    var namaBaru:String?
-    var namaKetiga:String?
+    var namaBari:String?
+    var namaKedua:String?
     
     lazy var contactModel: ContactModel = ContactModel()
     var dataContact = [Contact]()
